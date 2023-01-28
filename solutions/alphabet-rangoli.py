@@ -1,4 +1,4 @@
-def alphabet_rangoli(n):
+def print_rangoli(size):
     import string
     chars = string.ascii_lowercase[:n][::-1]
 
@@ -14,7 +14,3 @@ def alphabet_rangoli(n):
 
     row_str = row_str + row_str[-2::-1]
     [print(row) for row in row_str]
-
-
-n = int(input())
-alphabet_rangoli(n)
